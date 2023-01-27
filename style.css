@@ -1,0 +1,25 @@
+body {
+    background: yellow;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    background: goldenrod;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: red;
+}
