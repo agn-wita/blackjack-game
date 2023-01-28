@@ -6,9 +6,12 @@ let isAlive = false
 let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
+let cardEl = document.getElementById("card-el")
 
 function startGame() {
     sumEl.textContent = "Sum: " + sum
+    cardEl.textContent = "Cards: " + firstCard + ' + ' + secondCard 
+
     if (sum < 21) {
         message = "Do you want to draw a new card?"
         isAlive = true
