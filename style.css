@@ -10,6 +10,7 @@ h1 {
 }
 
 button {
+    display: block;
     font-size: 18px;
     font-weight: bold;
     background: goldenrod;
@@ -18,8 +19,15 @@ button {
     color: white;
     border-radius: 2px;
     cursor: pointer;
+    margin-bottom: 15px;
+    margin: 15px auto;
+    width: 200px;
 }
 
 button:hover {
     background: red;
+}
+
+#message-el {
+    font-style: italic;
 }
