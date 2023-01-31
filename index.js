@@ -9,6 +9,10 @@ let sumEl = document.getElementById("sum-el")
 let cardEl = document.getElementById("card-el")
 
 function startGame() {
+    renderGame()
+}
+
+function renderGame() {
     sumEl.textContent = "Sum: " + sum
     cardEl.textContent = "Cards: " + firstCard + ' + ' + secondCard 
 
@@ -32,7 +36,7 @@ function startGame() {
 function newCard() {
     let card = 5
     sum += card
-    startGame()
+    renderGame()
 }
 
 
