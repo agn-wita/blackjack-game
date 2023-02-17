@@ -27,6 +27,7 @@ else {
 }
 
 function startGame() {
+    isAlive = true
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     cards = [firstCard, secondCard]
@@ -43,7 +44,6 @@ function renderGame() {
 
     if (sum < 21) {
         message = "Do you want to draw a new card?"
-        isAlive = true
     }
     
     else if (sum === 21) {
@@ -53,17 +53,21 @@ function renderGame() {
     
     else {
         message = "You're out of the game!" 
+        isAlive = false
     }
     
     messageEl.textContent = message
 }
 
 function newCard() {
-    let card = getRandomCard()
-    sum += card
-    cards.push(card)
-    // console.log(cards)
-    renderGame()
+
+    if (isAlive === true && hasBlackjack === false) {
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        // console.log(cards)
+        renderGame()
+    }
 }
 
 
