@@ -11,3 +11,7 @@ The user draw 2 cards by clicking START GAME. Depending on sum of two cards the 
 - NEW CARD button is blocked when You're out of the game!. Used booleans
 - function as a variable
 - pushing new cards to array with the use of array.push()
+
+## Stage of the project: completed
+
+Please note that this project is based on tutorial but the code was not copied. Every line of code was written by me according to my invention and with deep understanding of the issues.
